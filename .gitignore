@@ -1,0 +1,11 @@
+# Rebuild the local environment from requirements.txt.
+.venv/
+
+# Model weights belong in the Hugging Face cache, not this project.
+*.safetensors
+
+__pycache__/
+*.pyc
+
+.DS_Store
+.env

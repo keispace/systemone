@@ -1,0 +1,11 @@
+# Local Laya runtime. Pin the transitive model stack so the MPS path remains reproducible.
+laya==0.3.5
+torch==2.14.0
+transformers==5.17.0
+huggingface_hub==1.32.0
+safetensors==0.8.0
+numpy==2.5.3
+
+# `app.py` parses the project-root .env at server startup only. It preserves
+# already-exported process environment values, including both remote API keys.
+python-dotenv==1.2.3
